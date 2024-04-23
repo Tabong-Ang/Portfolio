@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="Stylesheet" href="portfolio_page.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li><a href="#welcome-section" >About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Contact" >Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Welcome section -->
+
+    <section id="welcome-section">
+        <img class="author" src="Phili_the_Evangelist.jpg" alt="author">
+        <h1 class="heading 1">Hi! I am Philip the Evangelist</h1>
+        <p class="element"></p>
+    </section>
+
+    <script>
+        var typed = new Typed('.element', {
+        strings: ["a Web Developer.", "a Full Stack Developer.", "A Graphic Designer.", "Check my projects below"],
+        typeSpeed: 130,
+        backspeed: 130,
+        });
+    </script>
+
+    <!-- Projects -->
+
+    <section id="projects">
+        <h2 class="my_projects">These are some of my projects</h2>
+        <div class="project-tile">
+            <a href="https://tabong-ang.github.io/Limps_ltd/" target="_blank">
+                <img class="project_image" src="limps_ltd_website.png" alt="project">
+                <p>Lucien Inspires</p>
+            </a>
+
+            <a href="tabong-ang.github.io/my-first-website/" target="_blank">
+                <img class="project_image" src="The_light_travel.PNG" alt="project">
+                <p>The Light Travel Foundation</p>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Contact SECTION -->
+
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+          <h2>Let's work together...</h2>
+        </div>
+        <div class="contact-links">
+          <a
+            href="https://web.facebook.com/profile.php?id=61555684793899/"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-facebook-square"></i> Facebook</a
+          >
+          <a
+            id="profile-link"
+            href="https://github.com/Tabong-Ang"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          
+          <a href="tabongphilip@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
+          >
+          <a href="tel: +237 675-552-594" class="btn contact-details"
+            ><i class="fas fa-mobile-alt"></i> Call me</a
+          >
+        </div>
+      </section>
+    
+      <footer>
+        <p>
+          Designed by Philip_the_Evangelist
+        </p>
+      </footer>
+      
+</body>
+</html>
