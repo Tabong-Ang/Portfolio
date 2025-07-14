@@ -72,6 +72,7 @@ h6 {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -179,6 +180,7 @@ nav a.active {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-100%);
   }
@@ -193,6 +195,7 @@ nav a.active {
   0% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -255,6 +258,7 @@ section.active {
 }
 
 @keyframes display-text {
+
   25%,
   100% {
     display: none;
@@ -273,6 +277,7 @@ section.active {
 }
 
 @keyframes fill-text {
+
   10%,
   100% {
     width: 0;
@@ -350,12 +355,10 @@ section.active {
   position: absolute;
   width: 50rem;
   height: 50rem;
-  background: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    var(--Green)
-  );
+  background: conic-gradient(transparent,
+      transparent,
+      transparent,
+      var(--Green));
   transform: rotate(0deg);
   animation: rotate-border 10s linear infinite;
 }
@@ -830,6 +833,7 @@ section.active {
   border-radius: 1rem;
   text-align: center;
 }
+
 .contact-box .heading {
   font-size: 3.5rem;
 }
@@ -885,9 +889,9 @@ section.active {
 }
 
 @media screen and (max-width: 50.625rem) {
- .contact-box .field-box {
-  grid-template-columns: 1fr;
- }
+  .contact-box .field-box {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 48rem) {
@@ -896,7 +900,7 @@ section.active {
   }
 
   .nav-bar {
-    position:absolute;
+    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -929,7 +933,7 @@ section.active {
     height: 35rem;
   }
 
-  .resume-container, 
+  .resume-container,
   .portfolio-container,
   .contact-container {
     grid-template-columns: 1fr;
@@ -960,13 +964,14 @@ section.active {
 }
 
 @media screen and (max-width: 28.125rem) {
- html {
-  font-size: 50%;
- }
+  html {
+    font-size: 50%;
+  }
 }
 
 @media screen and (max-width: 25rem) {
-  .home-details, 
+
+  .home-details,
   .resume-box h2,
   .resume-box .heading,
   .resume-box .desc,
